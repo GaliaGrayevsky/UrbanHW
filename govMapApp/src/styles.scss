@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// cross app settings
+.abs-pos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.box-border {
+    border: 1px solid rgba(0,0,0,.2);
+}
+
+.mat-checkbox-label {
+    margin-right: 5px
+}

@@ -1,0 +1,19 @@
+<div class = "abs-pos map-menu">
+    <mat-button-toggle-group name="layesrMenu" aria-label="Layers Menu"
+                            *ngFor = "let mi of menuSettings"
+    >
+      <mat-button-toggle value="bold" (click) = "setActiveMenu(mi.iconName)">
+          <div class="icon">
+            <mat-icon aria-hidden="false">{{mi.iconName}}</mat-icon>
+            <div>
+              {{mi.iconText}}
+            </div>
+          </div>
+      </mat-button-toggle>      
+    </mat-button-toggle-group>
+    
+</div>
+
+<div *ngIf = "activeMenu == 'toc'">
+  <app-layers-list (close) = "onClose()"></app-layers-list>
+</div>

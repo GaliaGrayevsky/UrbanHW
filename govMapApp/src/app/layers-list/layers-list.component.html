@@ -1,0 +1,16 @@
+<div class="abs-pos box-border list-container">
+    <h1 class="abs-pos title">שכבות מידה</h1>
+    <button class = "aps-pos close" mat-icon-button aria-label="Mini X" (click) = "emitClose()">
+        <mat-icon>close</mat-icon>
+    </button>
+
+    <div class="layers-list">
+        <div *ngFor = "let l of layers">       
+            <mat-checkbox 
+                  [checked] = "l.selected"                
+                  (change)="toggleLayer(l)">
+                  {{l.layerCaption}}
+            </mat-checkbox>
+        </div>
+    </div>
+</div>
